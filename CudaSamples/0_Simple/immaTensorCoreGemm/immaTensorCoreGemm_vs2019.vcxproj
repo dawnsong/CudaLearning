@@ -54,7 +54,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;../../common/inc;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;$(CudaToolkitDir)/include;$(CudaToolkitDir)/common/inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -65,7 +65,7 @@
     <CudaCompile>
       <CodeGeneration>compute_75,sm_75;</CodeGeneration>
       <AdditionalOptions>-Xcompiler "/wd 4819" %(AdditionalOptions)</AdditionalOptions>
-      <Include>./;../../common/inc</Include>
+      <Include>./;$(CudaToolkitDir)/common/inc</Include>
       <Defines>WIN32</Defines>
     </CudaCompile>
   </ItemDefinitionGroup>
